@@ -1,6 +1,6 @@
 # <div align="center">Just Random Guy With Keyboard</div>
 <div id="header" align="center">
-<iframe src="https://embed.lottiefiles.com/animation/72970"></iframe>
+<img src="image/banner.gif" title="banner" alt="banner" width="500">
 </div>
 
 ---
