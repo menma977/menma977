@@ -1,6 +1,6 @@
 # <div align="center">Just Random Guy With Keyboard</div>
 <div id="header" align="center">
-![laptop](https://user-images.githubusercontent.com/38025704/200119467-ae30be98-f537-4c64-a0b9-3f838139f184.gif)
+![banner](https://raw.githubusercontent.com/menma977/menma977/main/image/banner.gif)
 </div>
 
 ---
