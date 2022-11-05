@@ -1,6 +1,7 @@
 # <div align="center">Just Random Guy With Keyboard</div>
 <div id="header" align="center">
-<img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" width="400" alt="any">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets5.lottiefiles.com/private_files/lf30_wo5lnbyz.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
 </div>
 
 ---
