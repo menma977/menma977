@@ -1,6 +1,7 @@
 # <div align="center">Just Random Guy With Keyboard</div
 <div id="header" align="center">
-![banner](https://user-images.githubusercontent.com/38025704/200119260-897c9f35-959c-46d8-8583-cc9d80965f7a.gif)
+![banner](https://user-images.githubusercontent.com/38025704/200119274-bed7086b-ab0a-4923-a800-756ae3eea77e.gif)
+
 </div>
 
 ---
