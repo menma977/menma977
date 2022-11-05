@@ -1,6 +1,7 @@
 # <div align="center">Just Random Guy With Keyboard</div>
 <div id="header" align="center">
 ![banner](image/banner.gif)
+<img src="https://raw.githubusercontent.com/menma977/menma977/main/image/banner.gif" title="banner" alt="banner" width="400"/>
 </div>
 
 ---
