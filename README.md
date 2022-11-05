@@ -1,6 +1,6 @@
 # <div align="center">Just Random Guy With Keyboard</div>
 <div id="header" align="center">
-<img src="image/banner.gif?raw=true" title="banner" alt="banner" width="500">
+<img src="image/banner.gif?raw=true" title="banner" alt="banner" width="500"/>
 </div>
 
 ---
