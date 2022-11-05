@@ -2,7 +2,6 @@
 <div id="header" align="center">
 ![banner](https://user-images.githubusercontent.com/38025704/200119274-bed7086b-ab0a-4923-a800-756ae3eea77e.gif)
 </div>
-![undefined-result](https://user-images.githubusercontent.com/38025704/200119392-1335dd1e-844c-4866-85a0-74df28e1513a.png)
 
 ---
 
