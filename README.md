@@ -6,13 +6,13 @@
 ---
 
 ### :hammer_and_wrench: I am a Full Stack Developer
-- :telescope: I’m working as a Fullstack Developer for building web applications.
+- :telescope: I’m working as a Fullstack Developer.
 
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
 <div id="badges">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/laravel/laravel-plain.svg" title="laravel" alt="laravel" width="30" height="30"/>&nbsp;
+    <img src="https://github.com/devicons/devicon/blob/master/icons/laravel/laravel-line.svg" title="laravel" alt="laravel" width="30" height="30"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/kotlin/kotlin-original.svg" title="kotlin" alt="kotlin" width="30" height="30"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-original.svg" title="jquery" alt="jquery" width="30" height="30"/>&nbsp;
     <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="javascript" alt="javascript" width="30" height="30"/>&nbsp;
