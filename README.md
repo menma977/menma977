@@ -1,24 +1,84 @@
-# <div align="center">Just Random Guy With Keyboard</div>
-<div id="header" align="center">
-<img src="https://media.giphy.com/media/LMcB8XospGZO8UQq87/giphy.gif" title="banner" alt="banner" width="400"/>
-</div>
+# Senior Backend Engineer
+
+Senior Backend Engineer with 9+ years of experience designing and building backend systems for enterprise and high-complexity domains.
+
+I specialize in **backend architecture, database design (ERD), and business-critical systems**, with hands-on experience across healthcare, HR management, and incentive-based platforms.
 
 ---
 
-### :hammer_and_wrench: I am a Full Stack Developer
-- :telescope: I’m working as a Fullstack Developer.
+## Core Expertise
+
+- Backend Architecture & System Design
+- Database Modeling & ERD (Complex Business Logic)
+- REST API Design & Integration
+- Enterprise & Multi-tenant Systems
+- High-reliability Backend Services
 
 ---
 
-### :hammer_and_wrench: Languages and Tools :
-<div id="badges">
-    <img src="https://github.com/devicons/devicon/blob/master/icons/laravel/laravel-line.svg" title="laravel" alt="laravel" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/kotlin/kotlin-original.svg" title="kotlin" alt="kotlin" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/jquery/jquery-original.svg" title="jquery" alt="jquery" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="javascript" alt="javascript" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="typescript" alt="typescript" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original.svg" title="java" alt="java" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/intellij/intellij-original.svg" title="intellij" alt="intellij" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="git" alt="git" width="30" height="30"/>&nbsp;
-    <img src="https://github.com/devicons/devicon/blob/master/icons/php/php-original.svg" title="php" alt="php" width="30" height="30"/>&nbsp;
-</div>
+## Technology Stack
+
+**Backend**
+- Java (Spring ecosystem)
+- Kotlin
+- PHP (Laravel)
+
+**Database**
+- MySQL / PostgreSQL
+- Relational schema design & optimization
+
+**Architecture**
+- Monolithic & Modular Backend
+- Service-oriented backend design
+- Authorization & role-based access control
+- Workflow & approval systems
+
+---
+
+## Professional Experience (Highlights)
+
+### Healthcare Systems
+- Designed and maintained backend systems for **multiple hospitals concurrently**
+- Handled:
+  - Medical data integrity
+  - Role-based access control
+  - High-availability backend services
+
+### Enterprise HR Management Systems
+- Backend engineer for HR systems covering:
+  - Employee lifecycle
+  - Approval workflows
+  - Payroll-related logic
+- Experience contributing backend concepts for **large enterprise property groups**
+
+### Incentive-Based & Hierarchical Systems
+- Built backend logic for **multi-level incentive platforms**
+- Focus on:
+  - Hierarchical data modeling
+  - Transaction consistency
+  - Complex commission calculations
+
+---
+
+## Featured Projects
+
+- [MyERP (Laravel)](https://github.com/menma977/MyERP) — Modular ERP backend with **approval workflow**, PHPStan Level 8, high-quality architecture.
+- WIP — Same system concept as Laravel version, implemented in Java/Kotlin.
+
+---
+
+## What I Do Best
+
+- Translating business requirements into **clean, scalable backend architecture**
+- Designing **robust ERD schemas** for complex domains
+- Making **pragmatic architectural trade-offs**
+- Working on systems where **data correctness matters more than hype**
+
+---
+
+## Notes on Code & Portfolio
+
+Most of my professional work is under NDA (enterprise, healthcare, internal systems).  
+GitHub showcases **system design skills, modular architecture, and backend implementations**.
+
+---
