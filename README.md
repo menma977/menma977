@@ -19,15 +19,18 @@ I specialize in **backend architecture, database design (ERD), and business-crit
 ## Technology Stack
 
 **Backend**
+
 - Java (Spring ecosystem)
 - Kotlin
 - PHP (Laravel)
 
 **Database**
+
 - MySQL / PostgreSQL
 - Relational schema design & optimization
 
 **Architecture**
+
 - Monolithic & Modular Backend
 - Service-oriented backend design
 - Authorization & role-based access control
@@ -38,6 +41,7 @@ I specialize in **backend architecture, database design (ERD), and business-crit
 ## Professional Experience (Highlights)
 
 ### Healthcare Systems
+
 - Designed and maintained backend systems for **multiple hospitals concurrently**
 - Handled:
   - Medical data integrity
@@ -45,6 +49,7 @@ I specialize in **backend architecture, database design (ERD), and business-crit
   - High-availability backend services
 
 ### Enterprise HR Management Systems
+
 - Backend engineer for HR systems covering:
   - Employee lifecycle
   - Approval workflows
@@ -52,18 +57,12 @@ I specialize in **backend architecture, database design (ERD), and business-crit
 - Experience contributing backend concepts for **large enterprise property groups**
 
 ### Incentive-Based & Hierarchical Systems
+
 - Built backend logic for **multi-level incentive platforms**
 - Focus on:
   - Hierarchical data modeling
   - Transaction consistency
   - Complex commission calculations
-
----
-
-## Featured Projects
-
-- [MyERP (Laravel)](https://github.com/menma977/MyERP) — Modular ERP backend with **approval workflow**, PHPStan Level 8, high-quality architecture.
-- WIP — Same system concept as Laravel version, implemented in Java/Kotlin.
 
 ---
 
@@ -82,3 +81,4 @@ Most of my professional work is under NDA (enterprise, healthcare, internal syst
 GitHub showcases **system design skills, modular architecture, and backend implementations**.
 
 ---
+
