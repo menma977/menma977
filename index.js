@@ -18,11 +18,13 @@ navigationElement.querySelectorAll('a').forEach(navigationLinkElement => {
 const heroQuoteItems = document.querySelectorAll('.hero-quote-item');
 let currentQuoteIndex = 0;
 
-setInterval(() => {
-  heroQuoteItems[currentQuoteIndex].classList.remove('active');
-  currentQuoteIndex = (currentQuoteIndex + 1) % heroQuoteItems.length;
-  heroQuoteItems[currentQuoteIndex].classList.add('active');
-}, 3000);
+if (heroQuoteItems.length > 1) {
+  setInterval(() => {
+    heroQuoteItems[currentQuoteIndex].classList.remove('active');
+    currentQuoteIndex = (currentQuoteIndex + 1) % heroQuoteItems.length;
+    heroQuoteItems[currentQuoteIndex].classList.add('active');
+  }, 3000);
+}
 
 const heroTitleElement = document.querySelector('.hero-title');
 if (heroTitleElement) {
@@ -126,7 +128,7 @@ function updateCableSnake(cableSnake) {
     if (cableSnake.directionY !== 1 && canGoUp) possibleDirections.push({ x: 0, y: -1 });
 
     if (possibleDirections.length > 0) {
-      const continueStraight = possibleDirections.find(d => d.x === cableSnake.directionX && d.y === cableSnake.directionY);
+      const continueStraight = possibleDirections.find(candidateDirection => candidateDirection.x === cableSnake.directionX && candidateDirection.y === cableSnake.directionY);
 
       if (continueStraight && Math.random() < 0.6) {
         cableSnake.directionX = continueStraight.x;
@@ -152,10 +154,9 @@ function updateCableSnake(cableSnake) {
 
   let totalTrailDistance = 0;
   for (let trailIndex = cableSnake.trail.length - 1; trailIndex > 0; trailIndex--) {
-    const segmentDistance = Math.sqrt(
-      Math.pow(cableSnake.trail[trailIndex].x - cableSnake.trail[trailIndex - 1].x, 2) +
-      Math.pow(cableSnake.trail[trailIndex].y - cableSnake.trail[trailIndex - 1].y, 2)
-    );
+    const segmentDeltaX = cableSnake.trail[trailIndex].x - cableSnake.trail[trailIndex - 1].x;
+    const segmentDeltaY = cableSnake.trail[trailIndex].y - cableSnake.trail[trailIndex - 1].y;
+    const segmentDistance = Math.sqrt(segmentDeltaX * segmentDeltaX + segmentDeltaY * segmentDeltaY);
     totalTrailDistance += segmentDistance;
     if (totalTrailDistance > maxTrailLength) {
       cableSnake.trail = cableSnake.trail.slice(trailIndex);
@@ -202,7 +203,7 @@ function cableAnimationLoop(currentTimestamp) {
   cableCanvasContext.clearRect(0, 0, cableCanvas.width, cableCanvas.height);
 
   if (currentTimestamp - lastSpawnTime > nextSpawnDelay) {
-    const eligibleCount = activeCables.filter(c => c.alive).length;
+    const eligibleCount = activeCables.filter(activeCable => activeCable.alive).length;
     if (eligibleCount < maxActiveCables) {
       activeCables.push(createCableSnake());
       lastSpawnTime = currentTimestamp;

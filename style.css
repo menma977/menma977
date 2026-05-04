@@ -1009,7 +1009,8 @@ nav a:hover {
 .contact-link svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
 }
 
 /* Footer */
