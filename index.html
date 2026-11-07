@@ -1,40 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-webtui-theme="catppuccin">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wisnu Putra Dewa — Senior Backend Engineer</title>
+    <title>Wisnu Putra Dewa</title>
     <meta
       name="description"
       content="Senior Backend Engineer with 9+ years of experience building production systems for enterprise HR, healthcare, recruitment, incentive, and crypto platforms. PHP/Laravel, Java, Kotlin, TypeScript, PostgreSQL/MySQL."
     />
-    <script>
-      document.documentElement.classList.add("js");
-    </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script type="importmap">
-    {
-      "imports": {
-        "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
-        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
-      }
-    }
-    </script>
-    <link
-      rel="icon"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D0D0D'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='14' font-weight='bold' fill='%2300E5FF' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Wisnu Putra Dewa — Senior Backend Engineer"
-    />
+    <meta property="og:title" content="Wisnu Putra Dewa" />
     <meta
       property="og:description"
       content="9+ years building production systems for enterprise HR, healthcare, recruitment, incentive, and crypto platforms."
@@ -43,855 +17,696 @@
       property="og:image"
       content="https://avatars.githubusercontent.com/u/38025704?v=4"
     />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Wisnu Putra Dewa",
-        "jobTitle": "Senior Backend Engineer",
-        "email": "mailto:com.owl.minerva@gmail.com",
-        "telephone": "+6285119508956",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Madiun",
-          "addressRegion": "Jawa Timur",
-          "addressCountry": "ID"
-        },
-        "sameAs": [
-          "https://github.com/menma977",
-          "https://www.linkedin.com/in/putra977"
-        ],
-        "alumniOf": {
-          "@type": "CollegeOrUniversity",
-          "name": "Universitas PGRI Madiun"
-        },
-        "knowsAbout": [
-          "PHP",
-          "Laravel",
-          "Java",
-          "Spring Boot",
-          "Kotlin",
-          "TypeScript",
-          "PostgreSQL",
-          "MySQL",
-          "REST API",
-          "RBAC",
-          "System Design"
-        ]
-      }
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <a href="#about" class="skip-link">Skip to content</a>
+    <main
+      is-="column"
+      gap-="2"
+      pad-="1 2"
+      data-webtui-theme="catppuccin-mocha"
+      class="container mx-auto"
+    >
+      <section id="hero" box-="round">
+        <header pad-="1 0">
+          <mark fg-="sky">menma977@arch</mark>
+          <mark fg-="blue">~</mark>
+          <mark fg-="green">fastfetch</mark>
+        </header>
 
-    <div class="scanline-overlay" aria-hidden="true"></div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6" pad-="2 1">
+          <column gap-="2" align-="stretch start">
+            <row align-="center">
+              <img
+                src="https://avatars.githubusercontent.com/u/38025704?v=4"
+                alt="Wisnu Putra Dewa"
+                class="rounded-full size-48 object-cover"
+              />
+            </row>
 
-    <canvas id="cable-canvas" class="cable-canvas" aria-hidden="true"></canvas>
-
-    <canvas id="webgl-canvas"></canvas>
-
-    <header>
-      <div class="container">
-        <a href="#hero" class="logo">WPD</a>
-        <button
-          class="nav-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-          aria-controls="main-navigation"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav id="main-navigation">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section id="hero">
-        <div class="hero-content fade-in">
-          <div class="hero-quotes-container">
-            <div class="hero-quote-item active">
-              <span class="hero-quote-text">"Backend at heart"</span>
-              <span class="hero-quote-source">9+ Years Experience</span>
-            </div>
-            <div class="hero-quote-item">
-              <span class="hero-quote-text">"Systems that scale"</span>
-              <span class="hero-quote-source">Enterprise Architecture</span>
-            </div>
-            <div class="hero-quote-item">
-              <span class="hero-quote-text">"Code that matters"</span>
-              <span class="hero-quote-source">Business-Critical Systems</span>
-            </div>
-          </div>
-          <img
-            src="https://avatars.githubusercontent.com/u/38025704?v=4"
-            alt="Wisnu Putra Dewa"
-            class="hero-avatar"
-            width="96"
-            height="96"
-          />
-          <h1 class="hero-title" data-text="WISNU PUTRA DEWA">
-            WISNU PUTRA DEWA
-          </h1>
-          <p class="hero-tagline">Fullstack Developer — Backend at Core</p>
-          <div class="hero-buttons">
-            <a
-              href="#projects"
-              class="btn btn-primary"
-              data-text="View Projects"
-              >View Projects</a
-            >
-            <a href="#contact" class="btn btn-outline" data-text="Get In Touch"
-              >Get In Touch</a
-            >
-          </div>
-          <div class="hero-tech-stack">
-            <span class="hero-tech-badge" data-text="Java">Java</span>
-            <span class="hero-tech-badge" data-text="Kotlin">Kotlin</span>
-            <span class="hero-tech-badge" data-text="PHP">PHP</span>
-            <span class="hero-tech-badge" data-text="Laravel">Laravel</span>
-            <span class="hero-tech-badge" data-text="TypeScript"
-              >TypeScript</span
-            >
-            <span class="hero-tech-badge" data-text="MySQL">MySQL</span>
-            <span class="hero-tech-badge" data-text="PostgreSQL"
-              >PostgreSQL</span
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="about">
-        <div class="container">
-          <div class="about-header fade-in">
-            <h2 class="section-title">About</h2>
-            <p>
-              Senior Backend Engineer with 9+ years of experience designing and
-              building backend systems for enterprise and high-complexity
-              domains. I specialize in backend architecture, database design
-              (ERD), and business-critical systems, with hands-on experience
-              across healthcare, HR management, and incentive-based platforms.
-            </p>
-          </div>
-          <div class="about-separator fade-in"></div>
-          <div class="about-featured-card fade-in">
-            <span class="about-featured-decorator"
-              >/// .about.featured_project</span
-            >
-            <h3 class="about-featured-title">Approval Binary</h3>
-            <p class="about-featured-description">
-              Laravel plugin for binary bitmask-based approval workflows.
-              Multi-level approval chains with efficient state tracking and
-              high-performance querying. Demonstrates real-world enterprise
-              patterns for complex business logic.
-            </p>
-          </div>
-          <div class="about-highlights-grid">
-            <div class="about-highlight-card fade-in fade-in-delay-1">
-              <h4>Healthcare Systems</h4>
-              <p>
-                Designed and maintained backend systems for multiple hospitals
-                concurrently, handling medical data integrity and RBAC.
+            <div box-="round" shear-="top">
+              <div class="header">
+                <span>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-circle-user"></i>
+                    About Me
+                  </mark>
+                </span>
+              </div>
+              <p pad-="1 0">
+                I'm <strong>Putra</strong> <mark fg-="sky">(menma977)</mark>, a
+                Fullstack Developer who builds and ships production systems end
+                to end across backend, frontend, and mobile.
               </p>
             </div>
-            <div class="about-highlight-card fade-in fade-in-delay-2">
-              <h4>Enterprise HR</h4>
+
+            <div box-="round" shear-="top">
+              <div class="header">
+                <span>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-briefcase"></i>
+                    Hire Me
+                  </mark>
+                </span>
+              </div>
+              <column gap-="1" pad-="1 0">
+                <p>
+                  I'm looking for a full-time software engineering role. Email
+                  is the best way to reach me.
+                </p>
+                <row gap-="1" align-="center start">
+                  <span is-="badge" variant-="green">Open to Work</span>
+                  <a
+                    is-="button"
+                    variant-="sky"
+                    box-="round"
+                    href="mailto:com.owl.minerva@gmail.com"
+                  >
+                    <div class="px-2">
+                      <i class="fa-solid fa-envelope"></i>
+                      Email me
+                    </div>
+                  </a>
+                  <a
+                    is-="button"
+                    variant-="sky"
+                    box-="round"
+                    href="https://github.com/menma977"
+                  >
+                    <div class="px-2">
+                      <i class="fa-brands fa-github"></i>
+                      GitHub
+                    </div>
+                  </a>
+                </row>
+              </column>
+            </div>
+          </column>
+
+          <column gap-="2">
+            <div box-="round" shear-="top">
+              <div class="header">
+                <span>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                  </mark>
+                </span>
+              </div>
+              <ul marker-="open tree" pad-="1 0">
+                <li>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-id-card"></i>
+                    Name
+                  </mark>
+                  : Wisnu Putra Dewa
+                </li>
+                <li>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-code"></i>
+                    Role
+                  </mark>
+                  : Fullstack Developer
+                </li>
+                <li>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-clock"></i>
+                    Experience
+                  </mark>
+                  : 9+ years
+                </li>
+                <li>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Location
+                  </mark>
+                  : Madiun, Jawa Timur, Indonesia
+                </li>
+                <li>
+                  <mark fg-="green">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Education
+                  </mark>
+                  : S1 Computer Science, Universitas PGRI Madiun
+                </li>
+              </ul>
+            </div>
+
+            <div box-="round" shear-="top">
+              <div class="header">
+                <span>
+                  <mark fg-="blue">
+                    <i class="fa-solid fa-layer-group"></i>
+                    Stack
+                  </mark>
+                </span>
+              </div>
+              <ul marker-="open tree" pad-="1 0">
+                <li>
+                  <mark fg-="blue">
+                    <i class="fa-solid fa-server"></i>
+                    Backend
+                  </mark>
+                  : Laravel, Spring Boot, Go
+                </li>
+                <li>
+                  <mark fg-="blue">
+                    <i class="fa-solid fa-display"></i>
+                    Frontend
+                  </mark>
+                  : TypeScript, React, Vue, Tailwind
+                </li>
+                <li>
+                  <mark fg-="blue">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    Mobile
+                  </mark>
+                  : Kotlin, Jetpack, Java
+                </li>
+                <li>
+                  <mark fg-="blue">
+                    <i class="fa-brands fa-docker"></i>
+                    Infra
+                  </mark>
+                  : Docker, GitHub Actions, Redis
+                </li>
+                <li>
+                  <mark fg-="blue">
+                    <i class="fa-brands fa-linux"></i>
+                    OS
+                  </mark>
+                  : Arch Linux
+                </li>
+              </ul>
+            </div>
+
+            <div box-="round" shear-="top">
+              <div class="header">
+                <span>
+                  <mark fg-="red">
+                    <i class="fa-solid fa-address-book"></i>
+                    Contact
+                  </mark>
+                </span>
+              </div>
+              <ul marker-="open tree" pad-="1 0">
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-solid fa-star"></i>
+                    Highlight
+                  </mark>
+                  : Approval Engine in 4 production systems
+                </li>
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+                  </mark>
+                  :
+                  <a href="mailto:com.owl.minerva@gmail.com"
+                    >com.owl.minerva@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-solid fa-phone"></i>
+                    Phone
+                  </mark>
+                  : <a href="tel:+6285119508956">+62 851-1950-8956</a>
+                </li>
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                  </mark>
+                  :
+                  <a href="https://github.com/menma977">github.com/menma977</a>
+                </li>
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-brands fa-gitlab"></i>
+                    GitLab
+                  </mark>
+                  :
+                  <a href="https://gitlab.com/menma977">gitlab.com/menma977</a>
+                </li>
+                <li>
+                  <mark fg-="red">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                  </mark>
+                  :
+                  <a href="https://www.linkedin.com/in/putra977"
+                    >linkedin.com/in/putra977</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </column>
+        </div>
+      </section>
+
+      <section id="experience" box-="round">
+        <header pad-="1 0">
+          <mark fg-="sky">menma977@arch</mark>
+          <mark fg-="blue">~</mark>
+          <mark fg-="green">experience</mark>
+        </header>
+
+        <column gap-="2" pad-="2 1">
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-briefcase"></i>
+                  Full-stack Developer @ Freelance
+                </mark>
+              </span>
+              <span><mark fg-="blue">Apr 2026 – Present</mark></span>
+            </div>
+            <column gap-="1" pad-="1 1">
               <p>
-                Backend engineer for HR systems covering employee lifecycle,
-                approval workflows, and payroll-related logic.
+                Shipped <mark fg-="red">StockLab</mark>, an offline COGS / HPP
+                calculator with FIFO stock consumption and profit estimation,
+                live on Google Play. Also built about 15 Android apps for
+                companies: QR scanning, attendance, and vehicle tracking.
               </p>
-            </div>
-            <div class="about-highlight-card fade-in fade-in-delay-3">
-              <h4>Complex Business Logic</h4>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Android</span>
+                <span is-="badge" variant-="mauve">Kotlin</span>
+                <span is-="badge" variant-="mauve">Jetpack</span>
+                <span is-="badge" variant-="mauve">Java</span>
+                <span is-="badge" variant-="mauve">FIFO / COGS</span>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
               <p>
-                Built multi-level incentive platforms with hierarchical data
-                modeling and complex commission calculations.
+                <mark fg-="red">StockLab</mark> (Kotlin, Jetpack): designed and
+                shipped an offline COGS / HPP calculator with purchase cost
+                tracking, FIFO stock consumption, and profit estimation
               </p>
+              <p>
+                Built about 15 Android apps for companies: QR scanning,
+                attendance, and vehicle tracking. Earlier apps in Java
+              </p>
+              <p>
+                Delivered freelance client work between and alongside full-time
+                roles
+              </p>
+            </details>
+          </column>
+
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-briefcase"></i>
+                  Back End Developer & Project Lead @ PT Difan Prima Paint
+                </mark>
+              </span>
+              <span><mark fg-="blue">Nov 2024 – Apr 2026</mark></span>
             </div>
-          </div>
-          <div class="about-separator-bottom fade-in"></div>
-        </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                Led backend delivery in a 20+ person IT team, running at least
+                four concurrent projects with
+                <mark fg-="red">85%</mark> of milestones on schedule. Designed a
+                dynamic approval engine that cut approval turnaround by
+                <mark fg-="red">90%</mark> and now runs in
+                <mark fg-="red">4 production systems</mark>, alongside the HRIS
+                and ERP.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Laravel</span>
+                <span is-="badge" variant-="mauve">Go</span>
+                <span is-="badge" variant-="mauve">Approval Engine</span>
+                <span is-="badge" variant-="mauve">HRIS</span>
+                <span is-="badge" variant-="mauve">ERP</span>
+                <span is-="badge" variant-="mauve">Pest</span>
+                <span is-="badge" variant-="mauve">Docker</span>
+                <span is-="badge" variant-="mauve">Team Lead</span>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
+              <p>
+                Led backend development and project delivery in a 20+ person IT
+                team; owned technical decisions and ran at least four concurrent
+                projects, delivering
+                <mark fg-="red">85%</mark> of milestones on schedule
+              </p>
+              <p>
+                Engineered and maintained the HRIS used by PT Difan Prima Paint
+                (thousands of employees), covering employee data, attendance,
+                payroll-related logic, and roles and permissions
+              </p>
+              <p>
+                Designed a dynamic approval engine for a multi-branch,
+                multi-department organization in which each request routes
+                automatically to the right approver, with conditions,
+                components, and contributors resolved at runtime, for example by
+                department and by user type, so drivers do not need director
+                approval. Binary step values allow parallel or partial approval
+              </p>
+              <p>
+                Cut approval turnaround by <mark fg-="red">90%</mark> and reused
+                the engine across
+                <mark fg-="red">4 different Difan projects</mark>, ensuring
+                every request is executed by the correct approver
+              </p>
+              <p>
+                Developed PT Difan Prima Paint's ERP (invoicing, cashier, stock,
+                multi-warehouse, and finance) and a second Difan ERP for
+                refrigerated-container shipping that is still in production
+                today
+              </p>
+              <p>
+                Built the <mark fg-="red">Sinarmas Land</mark> recruitment
+                platform (delivered via Bezhoe, completed about Feb 2026),
+                covering public job listings, candidate application flow, and
+                admin-side data management and validation
+              </p>
+              <p>
+                Camper-van rental project: built a Go helper service that
+                watches the primary database for changes and triggers Laravel
+                queue jobs to sync them into a secondary database
+              </p>
+              <p>
+                Mentored junior developers through daily morning progress
+                meetings and gap reviews
+              </p>
+              <p>
+                Wrote Pest test coverage and ran Docker and direct deployments
+                alongside the DevOps team
+              </p>
+            </details>
+          </column>
+
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-briefcase"></i>
+                  Full-stack Developer @ Dekate.id
+                </mark>
+              </span>
+              <span><mark fg-="blue">Jun 2022 – Nov 2024</mark></span>
+            </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                Built a hospital HRIS with dynamic RBAC, payroll, and attendance
+                for about <mark fg-="red">2,400 staff</mark> across 2 hospitals
+                and 2 pharmacies, plus the pharmacy system and a
+                government-mandated online queue, built in cooperation with
+                BPJS, handling
+                <mark fg-="red">200 patient registrations per day</mark>.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Laravel</span>
+                <span is-="badge" variant-="mauve">Vue.js</span>
+                <span is-="badge" variant-="mauve">PrimeVue</span>
+                <span is-="badge" variant-="mauve">Healthcare</span>
+                <span is-="badge" variant-="mauve">RBAC</span>
+                <span is-="badge" variant-="mauve">Payroll</span>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
+              <p>
+                Delivered Laravel back ends and Vue.js (PrimeVue) front ends
+                across several concurrent projects
+              </p>
+              <p>
+                HRIS for hospital employee management: user management, roles
+                and permissions (dynamic RBAC), and salary determination; staff
+                clock in and out from their phones over hospital Wi-Fi, and the
+                system runs payroll, attendance, and role-based access for about
+                <mark fg-="red">2,400 staff</mark> across 2 hospitals and 2
+                pharmacies end to end
+              </p>
+              <p>
+                Built the pharmacy system that keeps medication operations
+                running day to day across 2 hospitals and 2 pharmacies in Ciamis
+              </p>
+              <p>
+                Built an online queue system for 2 hospitals and 2 pharmacies in
+                Ciamis, a government-mandated system delivered in cooperation
+                with BPJS that now handles
+                <mark fg-="red">200 patient registrations per day</mark>; also
+                maintained database backups
+              </p>
+            </details>
+          </column>
+
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-briefcase"></i>
+                  Full-stack Developer @ Freelance
+                </mark>
+              </span>
+              <span><mark fg-="blue">Jan 2021 – May 2022</mark></span>
+            </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                Designed and built <mark fg-="red">CoinBazooka</mark> from the
+                ground up (listing pages, project discovery, promoted listings,
+                chain-based filtering), plus point-of-sale, warehouse, tracking,
+                and housing-promotion applications.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">React</span>
+                <span is-="badge" variant-="mauve">TypeScript</span>
+                <span is-="badge" variant-="mauve">Laravel</span>
+                <span is-="badge" variant-="mauve">Point of Sale</span>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
+              <p>
+                <mark fg-="red">CoinBazooka</mark> (React + TypeScript front
+                end, Laravel back end): designed and developed the application
+                from the ground up, including listing pages, project discovery,
+                promoted listings, and chain-based filtering
+              </p>
+              <p>
+                Built point-of-sale (cashier), warehouse, tracking, and
+                housing-promotion applications
+              </p>
+            </details>
+          </column>
+
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-briefcase"></i>
+                  Full-stack Developer @ PT Tadana Raya Dwarsa
+                </mark>
+              </span>
+              <span><mark fg-="blue">May 2017 – Dec 2020</mark></span>
+            </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                Delivered <mark fg-="red">58 applications</mark>, each with 200+
+                users (10,000+ cumulative), including multi-level incentive
+                platforms with complex commission calculations,
+                <mark fg-="red">MPay</mark> (PPOB), and
+                <mark fg-="red">My Shannen</mark> (2,000+ users).
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Laravel</span>
+                <span is-="badge" variant-="mauve">React</span>
+                <span is-="badge" variant-="mauve">Kotlin</span>
+                <span is-="badge" variant-="mauve">React Native</span>
+                <span is-="badge" variant-="mauve">Java</span>
+                <span is-="badge" variant-="mauve">Commission Calculation</span>
+                <span is-="badge" variant-="mauve">Database Locks</span>
+                <span is-="badge" variant-="mauve">Queued Jobs</span>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
+              <p>
+                Delivered <mark fg-="red">58 applications</mark> back to back,
+                each with 200+ users (10,000+ cumulative users), on Laravel with
+                Blade or React front ends and Android (Kotlin, React Native);
+                covered the full stack through deployment
+              </p>
+              <p>
+                Built multi-level incentive platforms with complex commission
+                calculations; kept transactions consistent with relational
+                constraints, database locks, and Laravel queued jobs
+              </p>
+              <p>
+                Built <mark fg-="red">MPay</mark>, a PPOB (bill-payment /
+                top-up) platform with a Kotlin app and a Java backend, used by
+                about 100 users
+              </p>
+              <p>
+                Built <mark fg-="red">My Shannen</mark>, a direct-selling
+                beauty-product app (Laravel Blade, Android Kotlin), used by
+                2,000+ users
+              </p>
+              <p>
+                Coached junior developers and introduced the daily team check-in
+              </p>
+            </details>
+          </column>
+        </column>
       </section>
 
-      <section id="experience">
-        <div class="container">
-          <h2 class="section-title fade-in">Experience</h2>
-          <p class="section-subtitle fade-in">
-            Professional career and education
-          </p>
-          <div class="timeline">
-            <div class="timeline-item fade-in fade-in-delay-1">
-              <div class="timeline-period">Nov 2024 — Apr 2026</div>
-              <div class="timeline-content">
-                <h3>Back End Developer — PT. Bezhoe Infotek Indonesia</h3>
-                <p>
-                  Designed backend architecture and system components for HR
-                  management systems used by large enterprise property groups.
-                  Implemented employee lifecycle management, approval workflows,
-                  payroll-related business logic, and secure database schemas.
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">Enterprise HR</span>
-                  <span class="skill-tag">Approval Workflows</span>
-                  <span class="skill-tag">Payroll Logic</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item fade-in fade-in-delay-2">
-              <div class="timeline-period">Jun 2022 — Jul 2024</div>
-              <div class="timeline-content">
-                <h3>Full Stack Programmer — Dekate.id</h3>
-                <p>
-                  Designed and maintained backend systems for multiple hospital
-                  environments concurrently. Focused on medical data integrity,
-                  role-based access control, query optimization, and
-                  high-availability service operation.
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">Healthcare</span>
-                  <span class="skill-tag">RBAC</span>
-                  <span class="skill-tag">Query Optimization</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item fade-in fade-in-delay-3">
-              <div class="timeline-period">May 2017 — Dec 2020</div>
-              <div class="timeline-content">
-                <h3>Full-stack Developer — PT Tadana Raya Dwarsa</h3>
-                <p>
-                  Built backend logic for multi-level incentive platforms and
-                  complex commission calculations. Modeled hierarchical data and
-                  maintained transaction consistency across calculation-heavy
-                  business rules.
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">Incentive Platform</span>
-                  <span class="skill-tag">Hierarchical Data</span>
-                  <span class="skill-tag">Commission Engine</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item fade-in fade-in-delay-4">
-              <div class="timeline-period">2017 — Present</div>
-              <div class="timeline-content">
-                <h3>Android Developer (Kotlin, Jetpack) — Personal / Side Projects</h3>
-                <p>
-                  Building and publishing Android apps in Kotlin and Jetpack
-                  (Java earlier). Latest project: StockLab, live on Google Play
-                  with 100+ installs.
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">Android</span>
-                  <span class="skill-tag">Kotlin</span>
-                  <span class="skill-tag">Jetpack</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item fade-in fade-in-delay-5">
-              <div class="timeline-period">2015 — 2017</div>
-              <div class="timeline-content">
-                <h3>Backend Developer (Java) — Confidential Client — Contract (NDA)</h3>
-                <p>
-                  Delivered backend services in Java (Spring Boot) alongside
-                  university: RESTful APIs, Spring Data JPA / Hibernate data
-                  layer, and Spring Security. Unit testing with JUnit, Git Flow
-                  branching.
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">Spring Boot</span>
-                  <span class="skill-tag">Spring Data JPA</span>
-                  <span class="skill-tag">Spring Security</span>
-                  <span class="skill-tag">JUnit</span>
-                </div>
-              </div>
-            </div>
-            <div class="timeline-item fade-in">
-              <div class="timeline-period">2014 — 2018</div>
-              <div class="timeline-content">
-                <h3>Education & Certification</h3>
-                <p>
-                  Computer Science in Software Technology — Universitas PGRI
-                  Madiun (GPA 3.45). National Certification based on SKKNI in
-                  Informatics — KOMINFO (May 2017).
-                </p>
-                <div class="timeline-tags">
-                  <span class="skill-tag">B.Sc. Computer Science</span>
-                  <span class="skill-tag">SKKNI KOMINFO</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="experience-additional fade-in">
-            <h3 class="experience-additional-title">Additional Experience</h3>
-            <p class="experience-additional-subtitle">
-              Side work and extra engagements
-            </p>
-            <div class="about-highlights-grid">
-              <div class="about-highlight-card">
-                <h4>Custom Blockchain Backend</h4>
-                <p>
-                  Chain structure, transaction flow, wallet-related logic,
-                  validation rules, and integrity-sensitive APIs for a private
-                  blockchain.
-                </p>
-              </div>
-              <div class="about-highlight-card">
-                <h4>RAG Data Indexing</h4>
-                <p>
-                  Helped a peer index medicine data for a
-                  retrieval-augmented-generation project.
-                </p>
-              </div>
-              <div class="about-highlight-card">
-                <h4>API & Integrations</h4>
-                <p>
-                  Authentication, payment-related flows, external services,
-                  Tron, NFT-related services, and Binance-related integrations.
-                </p>
-              </div>
-              <div class="about-highlight-card">
-                <h4>Remote Delivery</h4>
-                <p>
-                  Coordinated with frontend and DevOps teams through API
-                  contracts, sample payloads, validation rules, logs, database
-                  changes, deployment timing, and release notes.
-                </p>
-              </div>
-              <div class="about-highlight-card">
-                <h4>AI Tools</h4>
-                <p>
-                  Codex, Claude Code, opencode, and Gemini — daily-driver AI
-                  coding assistants for pair-programming, refactoring, and code
-                  review.
-                </p>
-              </div>
-            </div>
-            <p class="experience-note">
-              Portfolio details for enterprise and private blockchain work are
-              summarized to protect confidential client information.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section id="projects" box-="round">
+        <header pad-="1 0">
+          <mark fg-="sky">menma977@arch</mark>
+          <mark fg-="blue">~</mark>
+          <mark fg-="green">projects</mark>
+        </header>
 
-      <section id="skills">
-        <div class="container">
-          <h2 class="section-title fade-in">Skills</h2>
-          <p class="section-subtitle fade-in">
-            Tech stack and areas of expertise
-          </p>
-          <div class="skills-grid">
-            <div class="skill-category fade-in fade-in-delay-1">
-              <h3>Languages</h3>
-              <div class="skill-list">
-                <span class="skill-tag">PHP</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Kotlin</span>
-                <span class="skill-tag">TypeScript</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Go</span>
-                <span class="skill-tag">Zig</span>
-              </div>
+        <column gap-="2" pad-="2 1">
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-folder-open"></i>
+                  Approval Engine
+                </mark>
+              </span>
             </div>
-            <div class="skill-category fade-in fade-in-delay-2">
-              <h3>Frameworks</h3>
-              <div class="skill-list">
-                <span class="skill-tag">Laravel</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Vue</span>
-              </div>
-            </div>
-            <div class="skill-category fade-in fade-in-delay-3">
-              <h3>Database</h3>
-              <div class="skill-list">
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">ERD Design</span>
-                <span class="skill-tag">Query Optimization</span>
-              </div>
-            </div>
-            <div class="skill-category fade-in fade-in-delay-4">
-              <h3>Backend & Architecture</h3>
-              <div class="skill-list">
-                <span class="skill-tag">System Design</span>
-                <span class="skill-tag">REST API</span>
-                <span class="skill-tag">RBAC</span>
-                <span class="skill-tag">Approval Workflows</span>
-                <span class="skill-tag">Integrations</span>
-                <span class="skill-tag">Throttling</span>
-              </div>
-            </div>
-            <div class="skill-category fade-in fade-in-delay-5">
-              <h3>Mobile</h3>
-              <div class="skill-list">
-                <span class="skill-tag">Android</span>
-                <span class="skill-tag">Kotlin</span>
-              </div>
-            </div>
-            <div class="skill-category fade-in">
-              <h3>Tools & Practices</h3>
-              <div class="skill-list">
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Linux</span>
-                <span class="skill-tag">API Documentation</span>
-                <span class="skill-tag">Remote Collaboration</span>
-                <span class="skill-tag">Deployment Coordination</span>
-              </div>
-            </div>
-            <div class="skill-category skill-category-wide fade-in">
-              <h3>Technical Leadership</h3>
-              <div class="skill-list">
-                <span class="skill-tag">Technical Decision-Making</span>
-                <span class="skill-tag">Architecture & System Design</span>
-                <span class="skill-tag">Mentoring Junior Engineers</span>
-                <span class="skill-tag">Estimation & Timeline Planning</span>
-                <span class="skill-tag">Cross-Team Coordination</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects">
-        <div class="container">
-          <h2 class="section-title fade-in">Projects</h2>
-          <p class="section-subtitle fade-in">
-            Selected work and side projects
-          </p>
-          <div class="projects-grid">
-            <div class="project-card fade-in fade-in-delay-1">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">Sinarmas Land Recruitment</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.live_production</span
-                >
-                <h3>Sinarmas Land Recruitment Platform</h3>
-                <p>
-                  Enterprise recruitment web platform. Public job listing and
-                  candidate application flows, admin-side data management,
-                  validation, and workflow reliability in production.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Laravel</span>
-                  <span class="skill-tag">Next.js</span>
-                  <span class="skill-tag">PostgreSQL</span>
-                  <span class="skill-tag">Live</span>
-                </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                <mark fg-="red">Approval Binary</mark> is a Laravel package for
+                building approval workflow engines with binary / bitmask state
+                tracking. It powers <mark fg-="red">4 production systems</mark>.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Laravel</span>
+                <span is-="badge" variant-="mauve">PHP</span>
+                <span is-="badge" variant-="mauve">Bitmask</span>
+                <span is-="badge" variant-="mauve">Workflow Engine</span>
+              </row>
+              <row gap-="1">
                 <a
-                  href="https://growithus.sinarmasland.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >Visit Site &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-1">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">CoinBazooka</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.live_production</span
-                >
-                <h3>CoinBazooka</h3>
-                <p>
-                  Crypto listing and discovery platform. Coin listing pages,
-                  market data display, chain-based filtering, promoted listings,
-                  and trending project discovery.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Laravel</span>
-                  <span class="skill-tag">React</span>
-                  <span class="skill-tag">Live</span>
-                </div>
-                <a
-                  href="https://coinbazooka.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >Visit Site &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-2">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">MyERP</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.module_laravel</span
-                >
-                <h3>MyERP</h3>
-                <p>
-                  Backend-only ERP system built with Laravel 12, focused on
-                  enterprise-grade business workflows, strict type safety, and a
-                  reusable approval workflow engine.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Laravel 12</span>
-                  <span class="skill-tag">PHP</span>
-                  <span class="skill-tag">ERP</span>
-                </div>
-                <a
-                  href="https://github.com/menma977/MyERP"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >View Project &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-3">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">Approval Binary</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.module_bitmask</span
-                >
-                <h3>Approval Binary</h3>
-                <p>
-                  Laravel plugin for binary bitmask-based approval workflows.
-                  Multi-level approval chains with efficient state tracking and
-                  high-performance querying.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Laravel</span>
-                  <span class="skill-tag">PHP</span>
-                  <span class="skill-tag">Bitmask</span>
-                </div>
-                <a
+                  is-="button"
+                  variant-="sky"
+                  box-="round"
                   href="https://github.com/menma977/Approval-Binary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >View Project &rarr;</a
                 >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-4">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">StockLab</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.android_kotlin</span
-                >
-                <h3>StockLab</h3>
-                <p>
-                  Offline inventory management app for small businesses. Track
-                  product purchase costs using COGS methodology with FIFO batch
-                  consumption.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Kotlin</span>
-                  <span class="skill-tag">Android</span>
-                  <span class="skill-tag">COGS / FIFO</span>
-                </div>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.owl.minerva.stocklab"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >Google Play &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-4">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">MPay</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.ppob_platform</span
-                >
-                <h3>MPay</h3>
-                <p>
-                  PPOB / bill-payment platform (OVO-style). Kotlin front end and
-                  Java backend for bill payment and top-up flows, built during
-                  tenure at PT Tadana Raya Dwarsa.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Kotlin</span>
-                  <span class="skill-tag">Java</span>
-                  <span class="skill-tag">PPOB</span>
-                </div>
-                <a
-                  href="https://github.com/menma977/M-Pay"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >View Project &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-1">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">Calcpad</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.module_rust</span
-                >
-                <h3>Calcpad</h3>
-                <p>
-                  Terminal-based calculator with coding capabilities. Built with
-                  Rust for performance and reliability.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">Rust</span>
-                  <span class="skill-tag">Terminal</span>
-                  <span class="skill-tag">Calculator</span>
-                </div>
-                <a
-                  href="https://github.com/menma977/Calcpad"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >View Project &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-2">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">Primbon Java</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.module_react</span
-                >
-                <h3>Primbon Java</h3>
-                <p>
-                  React-based web app combining traditional Javanese Primbon
-                  divination with modern AI (GLM-4) for Weton, Compatibility,
-                  and Life Guidance insights.
-                </p>
-                <div class="project-card-tags">
-                  <span class="skill-tag">React</span>
-                  <span class="skill-tag">AI</span>
-                  <span class="skill-tag">GLM-4</span>
-                </div>
-                <a
-                  href="https://github.com/menma977/PrimbonJava"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="project-card-link"
-                  >View Project &rarr;</a
-                >
-              </div>
-            </div>
-            <div class="project-card fade-in fade-in-delay-3">
-              <div class="project-card-image-area">
-                <span class="project-card-title-overlay">Project Client Base</span>
-              </div>
-              <div class="project-card-body">
-                <span class="project-card-decorator"
-                  >/// .project.client_contracts</span
-                >
-                <h3>Project Client Base</h3>
-                <p>
-                  Client projects delivered under contract — ended engagements
-                  across web and Android platforms.
-                </p>
-                <div class="project-card-client-list">
-                  <a
-                    href="https://github.com/menma977/Wall_Street"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Wall_Street
-                    <span>Laravel · Passport · Fortify · Docker Compose</span></a
-                  >
-                  <a
-                    href="https://github.com/menma977/WallStreet"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >WallStreet <span>Android</span></a
-                  >
-                  <a
-                    href="https://github.com/menma977/ijool.apk"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >ijool.apk <span>Android</span></a
-                  >
-                  <a
-                    href="https://github.com/menma977/PluckyWallet"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >PluckyWallet <span>Android Wallet</span></a
-                  >
-                  <a
-                    href="https://github.com/menma977/AgogoX"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >AgogoX <span>Merchant Android</span></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="projects-more fade-in">
-            <a
-              href="https://github.com/menma977"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn-cyan"
-              >View All Projects on GitHub</a
-            >
-          </div>
-        </div>
-      </section>
+                  <div class="px-2">
+                    <i class="fa-brands fa-github"></i>
+                    Source
+                  </div>
+                </a>
+              </row>
+            </column>
+            <div is-="separator" cap-="bisect"></div>
+            <details is-="accordion">
+              <summary>Details</summary>
+              <p>
+                Rather than a CRUD approval scaffold or a UI builder, the
+                package orchestrates reusable workflows: define approval
+                blueprints in database records, resolve contributors at runtime,
+                clone the selected blueprint into an execution event, and track
+                approval progress with bitwise masks
+              </p>
+            </details>
+          </column>
 
-      <section id="contact">
-        <div class="container">
-          <h2 class="section-title fade-in">Contact</h2>
-          <p class="section-subtitle fade-in">Let's build something together</p>
-          <div class="contact-links">
-            <a
-              href="mailto:com.owl.minerva@gmail.com"
-              class="contact-link fade-in fade-in-delay-1"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
-                />
-                <polyline points="22,6 12,13 2,6" />
-              </svg>
-              <span>com.owl.minerva@gmail.com</span>
-            </a>
-            <a
-              href="tel:+6285119508956"
-              class="contact-link fade-in fade-in-delay-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                />
-              </svg>
-              <span>+62 851-1950-8956</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/putra977"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-link fade-in fade-in-delay-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
-                />
-                <rect x="2" y="9" width="4" height="12" />
-                <circle cx="4" cy="4" r="2" />
-              </svg>
-              <span>LinkedIn</span>
-            </a>
-            <a
-              href="https://github.com/menma977"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contact-link fade-in fade-in-delay-4"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                aria-hidden="true"
-              >
-                <path
-                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
-                />
-              </svg>
-              <span>GitHub</span>
-            </a>
-          </div>
-        </div>
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-folder-open"></i>
+                  StockLab
+                </mark>
+              </span>
+            </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                Shipped a <mark fg-="red">100% offline</mark> stock and COGS
+                calculator to Google Play, now trusted by
+                <mark fg-="red">100+ users</mark> to put complete inventory and
+                cost control in their pocket.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Android</span>
+                <span is-="badge" variant-="mauve">Kotlin</span>
+                <span is-="badge" variant-="mauve">Jetpack</span>
+                <span is-="badge" variant-="mauve">FIFO / COGS</span>
+              </row>
+              <row gap-="1">
+                <a
+                  is-="button"
+                  variant-="sky"
+                  box-="round"
+                  href="https://play.google.com/store/apps/details?id=com.owl.minerva.stocklab"
+                >
+                  <div class="px-2">
+                    <i class="fa-brands fa-google-play"></i>
+                    Source
+                  </div>
+                </a>
+              </row>
+            </column>
+          </column>
+
+          <column box-="round" shear-="top">
+            <div class="header">
+              <span>
+                <mark fg-="green">
+                  <i class="fa-solid fa-folder-open"></i>
+                  Calcpad
+                </mark>
+              </span>
+              <span><mark fg-="blue">Mar 2026 – Present</mark></span>
+            </div>
+            <column gap-="1" pad-="1 1">
+              <p>
+                A terminal calculator notepad: a plain text file in which each
+                line is evaluated as it is typed, with results displayed in a
+                right-hand column. Implemented in
+                <mark fg-="red">Rust</mark>, it follows the model of Soulver and
+                Windows Calculator's notebook mode.
+              </p>
+              <row gap-="1" class="flex-wrap">
+                <span is-="badge" variant-="mauve">Rust</span>
+                <span is-="badge" variant-="mauve">CLI</span>
+              </row>
+              <row gap-="1">
+                <a
+                  is-="button"
+                  variant-="sky"
+                  box-="round"
+                  href="https://github.com/menma977/Calcpad"
+                >
+                  <div class="px-2">
+                    <i class="fa-brands fa-github"></i>
+                    Source
+                  </div>
+                </a>
+              </row>
+            </column>
+          </column>
+        </column>
       </section>
     </main>
-
-    <footer>
-      <div class="container">
-        <p>
-          &copy; <span id="current-year">2026</span> Wisnu Putra Dewa. All
-          rights reserved.
-        </p>
-      </div>
-    </footer>
   </body>
-
-  <script src="index.js" defer></script>
-  <script type="module" src="shader.js"></script>
-  <script id="js-vertex-shader" type="x-shader/x-vertex">
-    attribute vec3 position;
-
-    void main()	{
-      gl_Position = vec4(position, 1.0);
-    }
-  </script>
-  <script id="js-fragment-shader" type="x-shader/x-fragment">
-    precision highp float;
-    uniform vec2 resolution;
-    uniform float time;
-    uniform float xScale;
-    uniform float yScale;
-    uniform float distortion;
-
-    void main() {
-      vec2 p = (gl_FragCoord.xy * 2.0 - resolution) / min(resolution.x, resolution.y);
-
-      float d = length(p) * distortion;
-
-      float rx = p.x * (1.0 + d);
-      float gx = p.x;
-      float bx = p.x * (1.0 - d);
-
-      float r = 0.05 / abs(p.y + sin((rx + time) * xScale) * yScale);
-      float g = 0.05 / abs(p.y + sin((gx + time) * xScale) * yScale);
-      float b = 0.05 / abs(p.y + sin((bx + time) * xScale) * yScale);
-
-      gl_FragColor = vec4(r, g, b, 1.0);
-    }
-  </script>
 </html>
-
